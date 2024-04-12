@@ -2,7 +2,7 @@
 	import { Input } from '$lib/components/ui/input';
 	import { superForm } from 'sveltekit-superforms';
 
-	const { data } = $props();
+	export let data;
 
 	const { form, errors, enhance } = superForm(data.form);
 </script>
